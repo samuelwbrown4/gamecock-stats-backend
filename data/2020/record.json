@@ -1,0 +1,53 @@
+[
+  {
+    "year": 2020,
+    "teamId": 2579,
+    "team": "South Carolina",
+    "classification": "fbs",
+    "conference": "SEC",
+    "division": "East",
+    "expectedWins": 2.7119307350773716,
+    "total": {
+      "games": 10,
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 10,
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 5,
+      "wins": 1,
+      "losses": 4,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 5,
+      "wins": 1,
+      "losses": 4,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 10,
+      "wins": 2,
+      "losses": 8,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 0,
+      "wins": 0,
+      "losses": 0,
+      "ties": 0
+    }
+  }
+]

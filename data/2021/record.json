@@ -1,0 +1,53 @@
+[
+  {
+    "year": 2021,
+    "teamId": 2579,
+    "team": "South Carolina",
+    "classification": "fbs",
+    "conference": "SEC",
+    "division": "East",
+    "expectedWins": 6.855620793760253,
+    "total": {
+      "games": 13,
+      "wins": 7,
+      "losses": 6,
+      "ties": 0
+    },
+    "conferenceGames": {
+      "games": 8,
+      "wins": 3,
+      "losses": 5,
+      "ties": 0
+    },
+    "homeGames": {
+      "games": 7,
+      "wins": 5,
+      "losses": 2,
+      "ties": 0
+    },
+    "awayGames": {
+      "games": 5,
+      "wins": 1,
+      "losses": 4,
+      "ties": 0
+    },
+    "neutralSiteGames": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    },
+    "regularSeason": {
+      "games": 12,
+      "wins": 6,
+      "losses": 6,
+      "ties": 0
+    },
+    "postseason": {
+      "games": 1,
+      "wins": 1,
+      "losses": 0,
+      "ties": 0
+    }
+  }
+]
