@@ -2,12 +2,20 @@ const express = require('express');
 const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
+const https = require('https');
 const rateLimit = require('express-rate-limit')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors({
+    origin: [
+        'http://localhost:5173',
+        'https://gamecock-stats-app-samuelbrowns-projects-7d2fb4f1.vercel.app',
+        /\.vercel\.app$/
+    ],
+    credentials: true
+}));
 app.use(express.json());
 
 const limiter = rateLimit({
@@ -135,7 +143,12 @@ app.get('/api/full-game-stats/:year' , (req , res) => {
     }
 });
 
-app.listen(PORT , () => {
-    console.log(`Server is running on Port ${PORT}`)
+const httpsOptions = {
+    key: fs.readFileSync(path.join(__dirname, 'server.key')),
+    cert: fs.readFileSync(path.join(__dirname, 'server.cert'))
+};
+
+https.createServer(httpsOptions, app).listen(PORT, () => {
+    console.log(`HTTPS Server is running on Port ${PORT}`);
 });
 
