@@ -10,7 +10,10 @@ const PORT = process.env.PORT || 3001;
 app.use(cors({
     origin: [
         'http://localhost:5173',
+        'http://localhost:5174',
         'https://gamecock-stats-app-samuelbrowns-projects-7d2fb4f1.vercel.app',
+        'https://sandstormstats.com',
+        'https://www.sandstormstats.com',
         /\.vercel\.app$/
     ],
     credentials: true
